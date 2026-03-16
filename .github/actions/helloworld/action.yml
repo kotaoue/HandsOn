@@ -1,13 +1,19 @@
 name: "Hello World"
 description: "Greet someone and record the time"
 inputs:
-  who-to-greet: # id of input
+  who-to-greet:
     description: "Who to greet"
-    required: true
+    required: false
     default: "World"
+  json-data:
+    description: "JSON data to include in the message"
+    required: false
+    default: ""
 outputs:
-  time: # id of output
+  time:
     description: "The time we greeted you"
+  result-message:
+    description: "The result message"
 runs:
-  using: "node12"
+  using: "node20"
   main: "index.js"

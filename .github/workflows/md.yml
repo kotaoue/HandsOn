@@ -1,0 +1,12 @@
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - "*.md"
+
+jobs:
+  md:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "*.md changed"

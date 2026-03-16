@@ -15,5 +15,7 @@ jobs:
           node-version: 12.x
       - name: Install dependencies
         run: npm ci
+        working-directory: GitHubActions
       - name: Audit
         run: npm audit
+        working-directory: GitHubActions

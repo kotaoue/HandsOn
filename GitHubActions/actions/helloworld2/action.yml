@@ -1,0 +1,5 @@
+name: "Javascript Hello World2"
+
+runs:
+  using: "node12"
+  main: "helloworld2.js"

@@ -1,0 +1,8 @@
+name: GIt Hello World
+on: push
+
+jobs:
+  helloworld:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: github-actions-up-and-running/hello-action@v1.0.0

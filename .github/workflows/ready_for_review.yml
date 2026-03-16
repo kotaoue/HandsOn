@@ -1,0 +1,19 @@
+name: Ready for Review
+on:
+  pull_request:
+    types: [opened, ready_for_review]
+
+jobs:
+  build:
+    name: Echo Message
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo
+        run: echo "Ready for Review"
+          echo "Draft ${{ github.event.pull_request.draft }} "
+      - name: if echo draft is true
+        if: ${{ github.event.pull_request.draft == true }}
+        run: echo "it's draft"
+      - name: if echo draft is false
+        if: ${{ github.event.pull_request.draft == false }}
+        run: echo "it's not draft"

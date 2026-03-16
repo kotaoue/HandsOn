@@ -1,0 +1,23 @@
+name: test
+on: push
+
+jobs:
+  js_action:
+    runs-on: ubuntu-latest
+    name: test js action
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Run a one-line script
+        id: getinput
+        run: |
+          testJson=`cat ./GitHubActions/input.json | tr -d '\n'`
+          echo "testdata=$testJson" >> $GITHUB_OUTPUT
+
+      - name: Create Message
+        uses: ./.github/actions/helloworld
+        id: create-message
+        with:
+          json-data: ${{ steps.getinput.outputs.testdata}}
+      - name: Output Message
+        run: echo ${{ steps.create-message.outputs.result-message }}

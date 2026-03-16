@@ -1,0 +1,17 @@
+{
+    "name": "fizz-buzz",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "lint": "eslint .",
+        "test": "nyc --reporter=html --reporter=text mocha"
+    },
+    "license": "MIT",
+    "devDependencies": {
+        "@cybozu/eslint-config": "^11.0.0",
+        "eslint": "^7.7.0",
+        "mocha": "^8.1.1",
+        "nyc": "^15.1.0",
+        "prettier": "^2.0.5"
+    }
+}

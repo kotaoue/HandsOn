@@ -1,0 +1,20 @@
+name: Auto Assign Assignee
+on:
+  pull_request:
+    types: [opened, edited, ready_for_review, converted_to_draft]
+    branches:
+      # プルリクの入れ先 intoで指定する場合はこちら
+      - "master"
+
+jobs:
+  assign:
+    runs-on: ubuntu-latest
+    # プルリクのHEAD from で指定する場合はこちら
+    # if: contains(github.head_ref, 'develop')
+    steps:
+      - run: gh pr edit $NUMBER --add-assignee $ASSIGNEE
+        env:
+          ASSIGNEE: ${{ github.actor }}
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          NUMBER: ${{ github.event.pull_request.number }}

@@ -1,0 +1,36 @@
+name: "Add release label"
+on: pull_request
+
+jobs:
+  env:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo github.head_ref
+      - run: echo github.base_ref
+      - run: echo "${{ github.head_ref }}"
+      - run: echo "${{ github.base_ref }}"
+
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/labeler@v2
+        with:
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"
+
+  to-release:
+    if: github.head_ref == 'release'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/labeler@v2
+        with:
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"
+          configuration-path: ".github/labeler_to_release.yml"
+
+  from-release:
+    if: github.head_ref == 'master' && github.base_ref == 'release'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/labeler@v2
+        with:
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"
+          configuration-path: ".github/labeler_from_release.yml"

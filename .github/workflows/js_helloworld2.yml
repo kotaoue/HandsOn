@@ -11,7 +11,7 @@ jobs:
       - name: Run a one-line script
         id: getinput
         run: |
-          testJson=`cat ./input.json | tr -d '\n'`
+          testJson=`cat ./GitHubActions/input.json | tr -d '\n'`
           echo "testdata=$testJson" >> $GITHUB_OUTPUT
 
       - name: Create Message

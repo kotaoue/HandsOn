@@ -7,12 +7,12 @@ jobs:
     name: test js action
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: Run a one-line script
         id: getinput
         run: |
           testJson=`cat ./input.json | tr -d '\n'`
-          echo "::set-output name=testdata::$testJson"
+          echo "testdata=$testJson" >> $GITHUB_OUTPUT
 
       - name: Create Message
         uses: ./.github/actions/helloworld

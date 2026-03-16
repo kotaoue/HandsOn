@@ -1,22 +1,30 @@
-console.log("jsjsjs");
-console.log(require.resolve('once'));
+const fs = require('fs');
 
-/*
-console.log(require.resolve('@actions'));
-console.log(require.resolve('@actions/core'));
-const core = require('@actions/core');
-const github = require('@actions/github');
+function getInput(name) {
+  return process.env[`INPUT_${name.toUpperCase().replace(/-/g, '_')}`] || '';
+}
+
+function setOutput(name, value) {
+  const outputFile = process.env['GITHUB_OUTPUT'];
+  if (outputFile) {
+    fs.appendFileSync(outputFile, `${name}=${value}\n`);
+  }
+}
 
 try {
-  // `who-to-greet` input defined in action metadata file
-  const nameToGreet = core.getInput('who-to-greet');
+  const nameToGreet = getInput('who-to-greet') || 'World';
+  const jsonData = getInput('json-data');
+
   console.log(`Hello ${nameToGreet}!`);
   const time = (new Date()).toTimeString();
-  core.setOutput("time", time);
-  // Get the JSON webhook payload for the event that triggered the workflow
-  const payload = JSON.stringify(github.context.payload, undefined, 2)
-  console.log(`The event payload: ${payload}`);
+  setOutput('time', time);
+
+  const message = jsonData
+    ? `Hello ${nameToGreet}! Data: ${jsonData}`
+    : `Hello ${nameToGreet}!`;
+  setOutput('result-message', message);
+  console.log(message);
 } catch (error) {
-  core.setFailed(error.message);
+  process.stdout.write(`::error::${error.stack || error.message}\n`);
+  process.exit(1);
 }
-*/

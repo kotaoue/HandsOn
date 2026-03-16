@@ -1,6 +1,6 @@
 # HandsOn
 
-技術書を読んで実際に手を動かしてみた結果を保存するリポジトリです。
+A repository storing the results of reading technical books and actually trying them hands-on.
 
 ## Contents
 

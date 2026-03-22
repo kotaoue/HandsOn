@@ -8,17 +8,16 @@ void draw() {
   background(255);
 
   float xstart = random(10);
-  float xnoise = xstart;
-  float ynoise = random(10);
+  float ynoiseInit = random(10);
+  int cols = width + 1;
 
-  for (int y = 0; y <+ height; y+=1) {
-    ynoise += 0.01;
-    xnoise = xstart;
-    for (int x = 0; x <= width; x+=1) {
-      xnoise += 0.01;
-      int alph = int(noise(xnoise, ynoise) * 255);
-      stroke(0, alph);
-      line(x, y, x+1, y+1);
-    }
+  for (int i = 0; i < cols * height; i++) {
+    int x = i % cols;
+    int y = i / cols;
+    float xnoise = xstart + (x + 1) * 0.01;
+    float ynoise = ynoiseInit + (y + 1) * 0.01;
+    int alph = int(noise(xnoise, ynoise) * 255);
+    stroke(0, alph);
+    line(x, y, x+1, y+1);
   }
 }

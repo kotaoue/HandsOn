@@ -11,44 +11,61 @@ void setup() {
 
 void restart() {
   _cellArray = new Cell[_numX][_numY];
-  for (int i = 0; i < _numX * _numY; i++) {
-    int x = i % _numX;
-    int y = i / _numX;
-    _cellArray[x][y] = new Cell(x, y);
+  for (int x = 0; x < _numX; x++) {
+    for (int y = 0; y< _numY; y++) {
+      Cell newCell = new Cell(x, y);
+      _cellArray[x][y] = newCell;
+    }
   }
 
-  for (int i = 0; i < _numX * _numY; i++) {
-    int x = i % _numX;
-    int y = i / _numX;
-    int above = (y - 1 + _numY) % _numY;
-    int below = (y + 1) % _numY;
-    int left  = (x - 1 + _numX) % _numX;
-    int right = (x + 1) % _numX;
+  for (int x = 0; x < _numX; x++) {
+    for (int y = 0; y< _numY; y++) {
+      int above = y - 1;
+      int below = y + 1;
+      int left = x - 1;
+      int right = x + 1;
+      if (above < 0) {
+        above = _numY -1;
+      }
+      if (below >= _numY) {
+        below = 0;
+      }
+      if (left < 0) {
+        left = _numX-1;
+      }
+      if (right >= _numX) {
+        right = 0;
+      }
 
-    _cellArray[x][y].addNeighbour(_cellArray[left][above]);
-    _cellArray[x][y].addNeighbour(_cellArray[left][y]);
-    _cellArray[x][y].addNeighbour(_cellArray[left][below]);
+      _cellArray[x][y].addNeighbour(_cellArray[left][above]);
+      _cellArray[x][y].addNeighbour(_cellArray[left][y]);
+      _cellArray[x][y].addNeighbour(_cellArray[left][below]);
 
-    _cellArray[x][y].addNeighbour(_cellArray[x][above]);
-    _cellArray[x][y].addNeighbour(_cellArray[x][below]);
+      _cellArray[x][y].addNeighbour(_cellArray[x][above]);
+      _cellArray[x][y].addNeighbour(_cellArray[x][below]);
 
-    _cellArray[x][y].addNeighbour(_cellArray[right][above]);
-    _cellArray[x][y].addNeighbour(_cellArray[right][y]);
-    _cellArray[x][y].addNeighbour(_cellArray[right][below]);
+      _cellArray[x][y].addNeighbour(_cellArray[right][above]);
+      _cellArray[x][y].addNeighbour(_cellArray[right][y]);
+      _cellArray[x][y].addNeighbour(_cellArray[right][below]);
+    }
   }
 }
 
 void draw() {
   background(200);
 
-  for (int i = 0; i < _numX * _numY; i++) {
-    _cellArray[i % _numX][i / _numX].calcNextState();
+  for (int x = 0; x < _numX; x++) {
+    for (int y = 0; y< _numY; y++) {
+      _cellArray[x][y].calcNextState();
+    }
   }
 
   translate(_cellSize / 2, _cellSize / 2);
 
-  for (int i = 0; i < _numX * _numY; i++) {
-    _cellArray[i % _numX][i / _numX].drawMe();
+  for (int x = 0; x < _numX; x++) {
+    for (int y = 0; y< _numY; y++) {
+      _cellArray[x][y].drawMe();
+    }
   }
 }
 

@@ -1,5 +1,5 @@
-float xStart, xNoise;
-float yStart, yNoise;
+float xStart;
+float yStart;
 float zStart, zNoise;
 
 int sideLength = 200;
@@ -28,18 +28,23 @@ void draw() {
   rotateZ(frameCount * 0.1);
   rotateY(frameCount * 0.1);
 
-  for (int z = 0; z <= sideLength; z+= spacing) {
-    zNoise += 0.1;
-    yNoise = yStart;
-    for (int y = 0; y <= sideLength; y+= spacing) {
-      yNoise += 0.1;
-      xNoise = xStart;
-      for (int x = 0; x <= sideLength; x+= spacing) {
-        xNoise += 0.1;
-        drawPoint(x, y, z, noise(xNoise, yNoise, zNoise));
-      }
-    }
+  int steps = sideLength / spacing + 1;
+  float zNoiseStart = zNoise;
+
+  for (int i = 0; i < steps * steps * steps; i++) {
+    int xi = i % steps;
+    int yi = (i / steps) % steps;
+    int zi = i / (steps * steps);
+    float x = xi * spacing;
+    float y = yi * spacing;
+    float z = zi * spacing;
+    float xN = xStart + (xi + 1) * 0.1;
+    float yN = yStart + (yi + 1) * 0.1;
+    float zN = zNoiseStart + (zi + 1) * 0.1;
+    drawPoint(x, y, z, noise(xN, yN, zN));
   }
+
+  zNoise = zNoiseStart + steps * 0.1;
 }
 
 void drawPoint(float x, float y, float z, float noiseFactor) {

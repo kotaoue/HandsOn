@@ -7,6 +7,7 @@ ISBN: 978-4-8144-0074-4
 
 ## テスト環境
 
+<!-- cspell:ignore -proot -->
 ```bash
 colima start
 docker-compose up -d

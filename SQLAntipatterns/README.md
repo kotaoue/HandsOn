@@ -8,12 +8,10 @@ ISBN: 978-4-8144-0074-4
 ## テスト環境
 
 ```bash
-docker compose up -d
-docker compose exec mysql mysql -u root -proot practice
-docker compose down
-
-# 完全削除
-docker compose down -v
+docker-compose up -d
+docker-compose exec mysql mysql -u root -proot practice
+docker-compose down
+docker-compose down -v
 ```
 
 | 項目 | 値 |

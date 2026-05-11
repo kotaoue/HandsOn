@@ -8,3 +8,7 @@ create table Accounts (
     portrait_image BLOB,
     hourly_rate NUMERIC(9, 2)
 );
+
+create table BugStatus (
+    status VARCHAR(20) PRIMARY KEY
+);

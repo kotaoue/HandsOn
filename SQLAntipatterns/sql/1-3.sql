@@ -57,4 +57,9 @@ create table if not exists Tags (
     FOREIGN KEY (bug_id) REFERENCES Bugs(bug_id)
 );
 
+create table if not exists Products (
+    product_id SERIAL PRIMARY KEY,
+    product_name VARCHAR(50)
+);
+
 show tables;

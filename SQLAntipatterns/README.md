@@ -25,9 +25,16 @@ docker-compose exec -T mysql mysql -u root -proot practice < 1-3.sql
 source /sql/1-3.sql;
 ```
 
+### 環境設定
+
 | 項目 | 値 |
 | ------ | ----- |
 | ホスト | `localhost:3306` |
 | ユーザー | `root` |
 | パスワード | `root` |
 | データベース | `practice` |
+
+### ER図
+
+```mermaid
+```

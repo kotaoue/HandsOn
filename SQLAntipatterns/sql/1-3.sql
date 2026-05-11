@@ -1,4 +1,4 @@
-create table Accounts (
+create table if not exists Accounts (
     account_id SERIAL PRIMARY KEY,
     account_name VARCHAR(20),
     first_name VARCHAR(20),
@@ -9,6 +9,6 @@ create table Accounts (
     hourly_rate NUMERIC(9, 2)
 );
 
-create table BugStatus (
+create table if not exists BugStatus (
     status VARCHAR(20) PRIMARY KEY
 );

@@ -31,4 +31,14 @@ create table if not exists Bugs (
     FOREIGN KEY (status) REFERENCES BugStatus(status)
 );
 
+create table if not exists Comments (
+    comment_id SERIAL PRIMARY KEY,
+    bug_id BIGINT UNSIGNED NOT NULL,
+    author BIGINT UNSIGNED NOT NULL,
+    comment_data DATE NOT NULL DEFAULT (CURRENT_TIMESTAMP),
+    comment TEXT NOT NULL,
+    FOREIGN KEY (bug_id) REFERENCES Bugs(bug_id),
+    FOREIGN KEY (author) REFERENCES Accounts(account_id)
+);
+
 show tables;

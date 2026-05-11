@@ -8,13 +8,17 @@ ISBN: 978-4-8144-0074-4
 ## テスト環境
 
 <!-- cspell:ignore -proot -->
-```bash
+```sh
 colima start
 docker-compose up -d
 docker-compose exec mysql mysql -u root -proot practice
 docker-compose down
-docker-compose down -v
+# docker-compose down -v
 colima stop
+```
+
+```sh
+docker-compose exec -T mysql mysql -u root -proot practice < 1-3.sql
 ```
 
 | 項目 | 値 |

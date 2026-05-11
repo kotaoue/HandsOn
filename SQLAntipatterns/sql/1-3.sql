@@ -62,4 +62,12 @@ create table if not exists Products (
     product_name VARCHAR(50)
 );
 
+create table if not exists BugProducts (
+    bug_id BIGINT UNSIGNED NOT NULL,
+    product_id BIGINT UNSIGNED NOT NULL,
+    PRIMARY KEY (bug_id, product_id),
+    FOREIGN KEY (bug_id) REFERENCES Bugs(bug_id),
+    FOREIGN KEY (product_id) REFERENCES Products(product_id)
+);
+
 show tables;

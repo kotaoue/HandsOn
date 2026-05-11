@@ -21,6 +21,10 @@ colima stop
 docker-compose exec -T mysql mysql -u root -proot practice < 1-3.sql
 ```
 
+```sh
+source /sql/1-3.sql;
+```
+
 | 項目 | 値 |
 | ------ | ----- |
 | ホスト | `localhost:3306` |

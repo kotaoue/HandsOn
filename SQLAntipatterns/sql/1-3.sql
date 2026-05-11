@@ -12,3 +12,5 @@ create table if not exists Accounts (
 create table if not exists BugStatus (
     status VARCHAR(20) PRIMARY KEY
 );
+
+show tables;

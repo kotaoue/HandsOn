@@ -50,4 +50,11 @@ create table if not exists Screenshots (
     FOREIGN KEY (bug_id) REFERENCES Bugs(bug_id)
 );
 
+create table if not exists Tags (
+    bug_id BIGINT UNSIGNED NOT NULL,
+    tag VARCHAR(20) NOT NULL,
+    PRIMARY KEY (bug_id, tag),
+    FOREIGN KEY (bug_id) REFERENCES Bugs(bug_id)
+);
+
 show tables;

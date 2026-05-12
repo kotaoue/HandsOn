@@ -22,7 +22,7 @@ docker-compose exec -T mysql mysql -u root -proot practice < 1-3.sql
 ```
 
 ```sh
-source /sql/1-3.sql;
+source /sql/chapter1.sql;
 ```
 
 ### 環境設定

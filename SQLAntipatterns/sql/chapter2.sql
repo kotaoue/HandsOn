@@ -1,6 +1,4 @@
-drop table if exists BugProducts;
-drop table if exists Accounts;
-drop table if exists Products;
+source /sql/drop.sql;
 
 create table if not exists Products (
     product_id SERIAL PRIMARY KEY,

@@ -1,3 +1,7 @@
+drop database if exists practice;
+create database practice;
+use practice;
+
 create table if not exists Accounts (
     account_id SERIAL PRIMARY KEY,
     account_name VARCHAR(20),

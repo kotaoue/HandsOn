@@ -1,4 +1,4 @@
-source /sql/drop.sql
+\. /sql/drop.sql
 
 create table if not exists Accounts (
     account_id SERIAL PRIMARY KEY,

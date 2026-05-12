@@ -57,3 +57,7 @@ create table if not exists Accounts (
     hourly_rate NUMERIC(9, 2)
 );
 select * from Products as p join Accounts as a on p.account_id = a.account_id where p.product_id = 1;
+
+select * from Products as p join Accounts as a
+  on p.account_id regexp '\\b' || a.account_id || '\\b' || '\\b'
+where p.product_id = 1;

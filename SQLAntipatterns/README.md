@@ -22,6 +22,7 @@ docker-compose exec -T mysql mysql -u root -proot practice < 1-3.sql
 ```
 
 ```sh
+source /sql/drop.sql;
 source /sql/chapter1.sql;
 ```
 

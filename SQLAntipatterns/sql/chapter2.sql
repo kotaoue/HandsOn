@@ -10,12 +10,24 @@ create table if not exists Products (
 desc Products;
 
 insert into Accounts (account_id, account_name) values (12, 'Acme Software');
+insert into Accounts (account_id, account_name) values (34, 'Globex Corporation');
 
 insert into Products (product_id, product_name, account_id) values (DEFAULT, 'Visual TurboBuilder', 12);
-
-
 select * from Products;
 
+insert into Products (product_id, product_name, account_id) values (DEFAULT, 'Visual TurboBuilder Pro', '12,34');
+select * from Products;
+
+drop table if exists Products;
+create table if not exists Products (
+    product_id SERIAL PRIMARY KEY,
+    product_name VARCHAR(1000),
+    account_id BIGINT UNSIGNED
+);
+desc Products;
+
+insert into Products (product_id, product_name, account_id) values (DEFAULT, 'Visual TurboBuilder Pro', '12,34');
+select * from Products;
 
 -- Recreate the table from Chapter 1
 drop table if exists Products;

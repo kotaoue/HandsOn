@@ -27,14 +27,14 @@ insert into Accounts (account_id, account_name) values (34, 'Globex Corporation'
 insert into Products (product_id, product_name, account_id) values (DEFAULT, 'Visual TurboBuilder', 12);
 select * from Products;
 
-insert into Products (product_id, product_name, account_id) values (DEFAULT, 'Visual TurboBuilder Pro', '12,34');
+insert into Products (product_id, product_name, account_id) values (DEFAULT, 'Visual TurboBuilder Pro', 12);
 select * from Products;
 
 drop table if exists Products;
 create table if not exists Products (
     product_id SERIAL PRIMARY KEY,
     product_name VARCHAR(1000),
-    account_id BIGINT UNSIGNED
+    account_id VARCHAR(100)
 );
 desc Products;
 

@@ -9,6 +9,8 @@ create table if not exists Products (
 );
 desc Products;
 
+insert into Accounts (account_id, account_name) values (12, 'Acme Software');
+
 insert into Products (product_id, product_name, account_id)
 values (DEFAULT, 'Visual TurboBuilder', 12);
 

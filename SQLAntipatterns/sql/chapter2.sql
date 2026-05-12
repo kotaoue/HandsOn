@@ -45,3 +45,15 @@ select * from Products;
 
 select * from Products where account_id = '12';
 select * from Products where account_id regexp '\\b12\\b';
+
+create table if not exists Accounts (
+    account_id SERIAL PRIMARY KEY,
+    account_name VARCHAR(20),
+    first_name VARCHAR(20),
+    last_name VARCHAR(20),
+    email VARCHAR(100),
+    password_hash CHAR(64),
+    portrait_image BLOB,
+    hourly_rate NUMERIC(9, 2)
+);
+select * from Products as p join Accounts as a on p.account_id = a.account_id where p.product_id = 1;

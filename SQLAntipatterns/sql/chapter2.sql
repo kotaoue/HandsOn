@@ -8,7 +8,7 @@ create table if not exists Products (
 );
 desc Products;
 
-insert into products (product_name, account_id) values (DEFAULT, 'Visual TurboBuilder', 12);
+insert into Products (product_id, product_name, account_id) values (DEFAULT, 'Visual TurboBuilder', 12);
 
 select * from Products;
 

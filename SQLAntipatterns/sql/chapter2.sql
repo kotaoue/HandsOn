@@ -38,5 +38,10 @@ create table if not exists Products (
 );
 desc Products;
 
+insert into Products (product_id, product_name, account_id) values (DEFAULT, 'Visual TurboBuilder', '12');
 insert into Products (product_id, product_name, account_id) values (DEFAULT, 'Visual TurboBuilder Pro', '12,34');
+insert into Products (product_id, product_name, account_id) values (DEFAULT, 'Visual TurboBuilder Enterprise', '34,56');
 select * from Products;
+
+select * from Products where account_id = '12';
+select * from Products where account_id regexp '\\b12\\b';

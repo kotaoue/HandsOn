@@ -1,4 +1,5 @@
 drop table if exists BugProducts;
+drop table if exists Accounts;
 drop table if exists Products;
 
 create table if not exists Products (
@@ -35,6 +36,17 @@ drop table if exists Products;
 create table if not exists Products (
     product_id SERIAL PRIMARY KEY,
     product_name VARCHAR(50)
+);
+
+create table if not exists Accounts (
+    account_id SERIAL PRIMARY KEY,
+    account_name VARCHAR(20),
+    first_name VARCHAR(20),
+    last_name VARCHAR(20),
+    email VARCHAR(100),
+    password_hash CHAR(64),
+    portrait_image BLOB,
+    hourly_rate NUMERIC(9, 2)
 );
 
 create table if not exists BugProducts (

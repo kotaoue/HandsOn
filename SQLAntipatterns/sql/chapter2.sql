@@ -1,5 +1,3 @@
-\. /sql/drop.sql
-
 create table if not exists Accounts (
     account_id SERIAL PRIMARY KEY,
     account_name VARCHAR(20),

@@ -1,4 +1,5 @@
-delete table if exists Products;
+drop table if exists Products;
+
 create table if not exists Products (
     product_id SERIAL PRIMARY KEY,
     product_name VARCHAR(1000),

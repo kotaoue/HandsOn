@@ -39,3 +39,12 @@ Writingでは見直しが必要
 1. 句読点の使い方は大丈夫か
 1. 文法上の間違いはないか
 1. 曖昧になってないか
+
+## 6. <動詞＋名詞+前置詞>の構造に注意する
+
+She is walking to the kale in the park.
+
+- in the park が lake を修飾する場合
+  - 彼女は公園の中の池に向かって歩いている
+- in the park が walking を修飾する場合
+  - 彼女は公園の中を池に向かって歩いている

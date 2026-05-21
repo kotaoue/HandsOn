@@ -42,6 +42,8 @@ Writingでは見直しが必要
 
 ## 6. <動詞＋名詞+前置詞>の構造に注意する
 
+修飾する対象の違いによる曖昧性
+
 She is walking to the kale in the park.
 
 - in the park が lake を修飾する場合

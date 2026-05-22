@@ -443,15 +443,15 @@ root@493714b6dbf1:/# curl http://web01/
 root@493714b6dbf1:/# curl http://web02/
 <html><body><h1>It works!</h1></body></html>
 root@493714b6dbf1:/# cat /etc/hosts
-127.0.0.1	localhost
-::1	localhost ip6-localhost ip6-loopback
-fe00::0	ip6-localnet
-ff00::0	ip6-mcastprefix
-ff02::1	ip6-allnodes
-ff02::2	ip6-allrouters
-172.17.0.2	web01 0965915c2c9f
-172.17.0.3	web02 48ad01e21077
-172.17.0.4	620cf4bb7e01
+127.0.0.1 localhost
+::1 localhost ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+172.17.0.2 web01 0965915c2c9f
+172.17.0.3 web02 48ad01e21077
+172.17.0.4 620cf4bb7e01
 root@493714b6dbf1:/# exit
 exit
 

@@ -113,7 +113,7 @@ $ docker run --name my-apache-app -it httpd:2.4 /bin/bash
 root@49897c582807:/usr/local/apache2# ll
 bash: ll: command not found
 root@49897c582807:/usr/local/apache2# ls  
-bin  build  cgi-bin  conf  error  htdocs  icons  include  logs	modules
+bin  build  cgi-bin  conf  error  htdocs  icons  include  logs modules
 root@49897c582807:/usr/local/apache2# $ 
 $ ls
 README.md  ch-2.md    ch-3.md    ch-4.md    index.html
@@ -138,7 +138,7 @@ CONTAINER ID        IMAGE               COMMAND              CREATED            
 77c00bd31390        httpd:2.4           "httpd-foreground"   9 seconds ago       Up 8 seconds        0.0.0.0:8080->80/tcp   my-apache-app
 $ docker exec -it my-apache-app /bin/bash
 root@77c00bd31390:/usr/local/apache2# ls
-bin  build  cgi-bin  conf  error  htdocs  icons  include  logs	modules
+bin  build  cgi-bin  conf  error  htdocs  icons  include  logs modules
 root@77c00bd31390:/usr/local/apache2# exit
 exit
 $ docker ps

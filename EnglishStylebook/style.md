@@ -73,3 +73,20 @@ She is walking to the kale in the park.
 ### 10. Writingは「まず書いてみる」ことから始まる
 
 書くためには書かないといけないが、書けるためには書かないといけない
+
+## 綴りの法則と用例
+
+### ハイフン Hyphen
+
+- U-turn = 大文字と小文字
+- γ-GTP = ギリシャ文字と単語
+- pro-German = 接頭辞と固有名詞
+- re-collect = 接頭辞と単語
+- an Osaka-based firm = 固有名詞と分詞
+- grass-eating = 「OをVする」という複合形容詞
+- a tax-included price = 「Nが(で)Vされた」という複合形容詞を
+- long-legged = 「AなNの」という複合形容詞
+- a seven-year-old girl = 数と単位を示す複合形容詞
+- the Nara period(710-794) = 数字の範囲
+- twenty-one = 21〜99までの数をスペルアウトする場合
+- one-third = 1/3 分数

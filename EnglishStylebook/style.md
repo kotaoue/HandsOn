@@ -76,17 +76,31 @@ She is walking to the kale in the park.
 
 ## 綴りの法則と用例
 
-### ハイフン Hyphen
-
-- U-turn = 大文字と小文字
-- γ-GTP = ギリシャ文字と単語
-- pro-German = 接頭辞と固有名詞
-- re-collect = 接頭辞と単語
-- an Osaka-based firm = 固有名詞と分詞
-- grass-eating = 「OをVする」という複合形容詞
-- a tax-included price = 「Nが(で)Vされた」という複合形容詞を
-- long-legged = 「AなNの」という複合形容詞
-- a seven-year-old girl = 数と単位を示す複合形容詞
-- the Nara period(710-794) = 数字の範囲
-- twenty-one = 21〜99までの数をスペルアウトする場合
-- one-third = 1/3 分数
+- ハイフン Hyphen
+- アポストロフィ
+- 大文字
+- イタリック
+- 略語
+- 複合語
+- 数字表記
+- 接頭辞と接尾辞
+- アメリカ英語とイギリス英語
+- リスト作成
+- インデント
+- ピリオド
+- コンマ
+- セミコロン
+- コロン
+- ダッシュ
+- 疑問符
+- 感嘆符
+- 引用符
+- 丸カッコ
+- 角カッコ
+- スラッシュ
+- 中黒
+- アステリスク
+- アンパサンド
+- アットマーク
+- パーセント
+- 通貨記号

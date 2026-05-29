@@ -3,7 +3,8 @@ ignorePaths: []
 dictionaryDefinitions: []
 dictionaries: []
 words:
-  - apach
+  - apache
+  - antipatterns
   - bunzip
   - bzcat
   - bzcmp
@@ -26,6 +27,8 @@ words:
   - rwxr
   - SIGWINCH
   - Stmts
+  - VARCHAR
   - webcontent
+  - Globex
 ignoreWords: []
 import: []

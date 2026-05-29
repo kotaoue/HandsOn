@@ -3,9 +3,32 @@ ignorePaths: []
 dictionaryDefinitions: []
 dictionaries: []
 words:
+  - apach
   - antipatterns
+  - bunzip
+  - bzcat
+  - bzcmp
+  - bzgrep
   - dafujii
-  - Globex
+  - drwxr
+  - ELIFECYCLE
+  - errno
+  - Funcs
+  - htdocs
+  - kota
+  - kotaoue
+  - libapache
+  - lrwxrwxrwx
+  - myapp
+  - myimage
+  - myphp
+  - myphpimage
+  - phpimage
+  - rwxr
+  - SIGWINCH
+  - Stmts
   - VARCHAR
+  - webcontent
+  - Globex
 ignoreWords: []
 import: []

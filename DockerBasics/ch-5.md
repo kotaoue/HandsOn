@@ -28,7 +28,7 @@ I'm index.html
 
 $ docker exec -it web01 /bin/bash
 root@eede17eeb130:/usr/local/apache2# ls
-bin  build  cgi-bin  conf  error  htdocs  icons  include  logs	modules
+bin  build  cgi-bin  conf  error  htdocs  icons  include  logs modules
 root@eede17eeb130:/usr/local/apache2# ls -la /usr/local/apache2/htdocs/
 total 16
 drwxr-xr-x 1 root     root     4096 Aug 10 23:22 .

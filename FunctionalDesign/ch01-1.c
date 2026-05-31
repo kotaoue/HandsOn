@@ -1,13 +1,5 @@
 #include <stdio.h>
 
-int main(int as, char **av)
-{
-    while (!done())
-    {
-        doSomething();
-    }
-}
-
 int n = 1;
 int sum = 0;
 
@@ -22,7 +14,8 @@ void doSomething()
     ++n;
 }
 
-void sumFirstTenSquares()
+// void sumFirstTenSquares()
+void main()
 {
     while (!done())
     {

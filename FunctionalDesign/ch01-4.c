@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+// すべての代入がなくなった = このプログラムは関数型
 int sumFirstTenSquaresHelper(int sum, int i)
 {
     if (i > 10)

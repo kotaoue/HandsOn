@@ -12,10 +12,11 @@ void doSomething()
 {
     sum += n * n;
     ++n;
+    printf("n: %d, sum: %d\n", n, sum);
 }
 
 // void sumFirstTenSquares()
-void main()
+int main()
 {
     while (!done())
     {

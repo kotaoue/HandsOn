@@ -5,7 +5,7 @@
 ## Build and Run C Code
 
 ```sh
-make crun
+make crun main.c
 ```
 
 ## Notes

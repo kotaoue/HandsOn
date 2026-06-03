@@ -8,6 +8,15 @@
 make crun main.c
 ```
 
+## Build and Run Java Code
+
+```sh
+javac ch02−1.java && java Sieve
+
+# 引数付き
+javac ch02−1.java && java Sieve 100
+```
+
 ## Notes
 
 - 関数型プログラミング is 何

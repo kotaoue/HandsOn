@@ -4,9 +4,9 @@ int sumFirstTenSquaresHelper(int sum, int i)
 {
     while (i <= 10)
     {
+        printf("i: %d, sum: %d\n", i, sum);
         sum += i * i;
         i++;
-        printf("i: %d, sum: %d\n", i, sum);
     }
     return sum;
 }

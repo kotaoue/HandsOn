@@ -1,18 +1,19 @@
 #include <stdio.h>
 
-int sumFirstTenSquaresHelper()
+int sumFirstTenSquaresHelper(int sum, int i)
 {
-    printf("i: %d, sum: %d\n", 1, 0);
-    return (1 > 10) ? 0 : sumFirstTenSquaresHelper(0 + 1 * 1, 1 + 1);
+    printf("i: %d, sum: %d\n", i, sum);
+    return (i > 10) ? sum : sumFirstTenSquaresHelper(sum + i * i, i + 1);
 }
 
 int sumFirstTenSquares()
 {
-    return (1 > 10) ? 0 : (2 > 10) ? 0 + 1 * 1
-                                   : sumFirstTenSquaresHelper((0 + 1 * 1) + 2 * 2, (1 + 1) + 1);
+    return sumFirstTenSquaresHelper(0, 1);
 }
 
 int main()
 {
-    sumFirstTenSquares();
+    int result = sumFirstTenSquares();
+    printf("result: %d\n", result);
+    return 0;
 }

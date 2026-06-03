@@ -3,18 +3,21 @@ ignorePaths: []
 dictionaryDefinitions: []
 dictionaries: []
 words:
-  - apache
   - antipatterns
+  - apache
   - bunzip
   - bzcat
   - bzcmp
   - bzgrep
+  - crun
   - dafujii
   - drwxr
   - ELIFECYCLE
   - errno
   - Funcs
+  - Globex
   - htdocs
+  - javac
   - kota
   - kotaoue
   - libapache
@@ -29,6 +32,5 @@ words:
   - Stmts
   - VARCHAR
   - webcontent
-  - Globex
 ignoreWords: []
 import: []

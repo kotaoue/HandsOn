@@ -20,7 +20,7 @@ javac ch02−1.java && java Sieve 100
 ## Build and Run Clojure Code
 
 ```sh
-clj ch03-0.clj
+clj -M ch03-1.clj
 ```
 
 ## Notes

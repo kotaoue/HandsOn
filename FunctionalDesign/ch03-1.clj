@@ -1,4 +1,4 @@
-(defn fibs-work [n i fs])
+(defn fibs-work [n i fs]
   (if (= i n)
     fs
     (fibs-work n (inc i) (conj fs (apply + (take-last 2 fs))))))

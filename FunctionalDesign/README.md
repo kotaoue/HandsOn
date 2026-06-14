@@ -17,6 +17,12 @@ javac ch02−1.java && java Sieve
 javac ch02−1.java && java Sieve 100
 ```
 
+## Build and Run Clojure Code
+
+```sh
+clj ch03-0.clj
+```
+
 ## Notes
 
 - 関数型プログラミング is 何

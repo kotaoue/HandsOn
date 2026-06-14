@@ -23,6 +23,12 @@ javac ch02−1.java && java Sieve 100
 clj -M ch03-1.clj
 ```
 
+### Lisp のチュートリアル by アンクル・ボブ
+
+1. C での関数呼び出し = f(x)
+1. Lisp での関数呼び出し = (f x)
+1. ↑でLispが理解できたのでチュートリアル終了
+
 ## Notes
 
 - 関数型プログラミング is 何

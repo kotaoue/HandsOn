@@ -1,5 +1,3 @@
-pakage sieve;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -57,5 +55,13 @@ class Sieve {
         } else {
             return getPrimes(sieve, primes, n + 1);
         }
+    }
+
+    public static void main(String[] args) {
+        int upTo = 30;
+        if (args.length > 0) {
+            upTo = Integer.parseInt(args[0]);
+        }
+        System.out.println(primesUpTo(upTo));
     }
 }

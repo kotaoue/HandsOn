@@ -9,4 +9,4 @@
     (= n 1) [0]
     :else (fibs-work n 2 [1 1])))
 
-(fibs 15)
+(println (fibs 15))

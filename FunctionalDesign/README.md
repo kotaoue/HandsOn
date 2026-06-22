@@ -51,3 +51,8 @@ clj -M ch03-1.clj
 
 - 参照透過性
   - 「ある式」を「その評価結果の値」に置き換えても、プログラム全体の振る舞いが一切変わらない性質
+
+## Links
+
+- <https://github.com/unclebob/spacewar>
+- <https://github.com/unclebob/wator>

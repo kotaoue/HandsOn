@@ -1,6 +1,6 @@
 (declare fib)
 
-(defn fib-w [n])
+(defn fib-w [n]
   (cond
     (< n 1) nil
     (<= n 2) 1

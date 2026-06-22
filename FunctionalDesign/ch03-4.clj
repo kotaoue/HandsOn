@@ -1,4 +1,4 @@
-; 再帰
+; 再帰 ※非効率で遅い
 (defn fib [n]
   (cond
     (< n 1) nil

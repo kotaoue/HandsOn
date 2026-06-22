@@ -43,6 +43,11 @@ clj -M ch03-1.clj
 ❌️ SOLIDはOOの原則
 ⭕️ SOLIDはソフトウェア設計の一般原則
 
+- OCP は 道徳心
+- SRP は 原動力
+- LSP と ISP は 不注意の警告サイン
+- DIP は 基盤
+
 - 単一責任の原則 = SRP = single Responsibility Principle
   - 🔺 モジュールは1つの機能に責任を持つ
   - ⭕️ モジュールは1つのアクターに対して責任を持つ

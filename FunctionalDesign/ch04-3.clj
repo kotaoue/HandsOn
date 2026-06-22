@@ -13,6 +13,11 @@
 
 (def list-of-fibs (lazy-fibs))
 
+; === doall について ===
+; doall は遅延シーケンスを強制的に評価する関数。
+; lazy-fibs は遅延評価（要素が必要になるまで計算されない）だが、
+; doall で全要素を一気に評価・実現化する。
+; memoize と組み合わせると計算結果がキャッシュされる。
 (def real-list-of-fibs (doall (take 50 (lazy-fibs))))
 
 ;(take 10 (lazy-fibs))

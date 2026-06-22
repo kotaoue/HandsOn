@@ -18,11 +18,13 @@ words:
   - Funcs
   - Globex
   - htdocs
+  - ifib
   - javac
   - kota
   - kotaoue
   - libapache
   - lrwxrwxrwx
+  - mktemp
   - myapp
   - myimage
   - myphp
@@ -34,5 +36,6 @@ words:
   - Stmts
   - VARCHAR
   - webcontent
+  - wordlist
 ignoreWords: []
 import: []

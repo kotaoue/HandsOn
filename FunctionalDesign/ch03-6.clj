@@ -6,4 +6,4 @@
     (<= n 2) 1
     :else (+ (fib (dec n)) (fib (- n 2)))))
 
-(defn fib (memoize fib-w))
+(def fib (memoize fib-w))

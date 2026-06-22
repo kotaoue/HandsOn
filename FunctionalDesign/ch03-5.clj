@@ -10,4 +10,4 @@
      (<= n 2) 1
      :else (ifib (- n 2) 1 1))))
 
-(println (ifib 30 1 1))
+(println (ifib 30))

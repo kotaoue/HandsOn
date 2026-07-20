@@ -10,7 +10,7 @@ uv sync
 uv run python ch01-1.py
 ```
 
-##
+### Check Unused Imports
 
 ```sh
 uvx ruff check . --select F401

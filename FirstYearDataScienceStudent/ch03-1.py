@@ -14,4 +14,13 @@ data = {
     "運動頻度": ["高", "中", "低", "高", "中", "低", "高", "中", "低", "高"],
 }
 df = pd.DataFrame(data)
-df.head()
+print(df.head())
+
+fig, ax = plt.subplots(figsize=(10, 3))
+ax.axis("off")
+ax.table(
+    cellText=df.head().values,
+    colLabels=df.head().columns,
+    loc="center",
+)
+plt.show()

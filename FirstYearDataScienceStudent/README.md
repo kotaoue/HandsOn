@@ -4,8 +4,15 @@
 
 ## Run sample code
 
-```bash
+```sh
 cd FirstYearDataScienceStudent
 uv sync
 uv run python ch01-1.py
+```
+
+##
+
+```sh
+uvx ruff check . --select F401
+uvx ruff check . --select F401 --fix
 ```

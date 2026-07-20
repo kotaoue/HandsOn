@@ -27,4 +27,4 @@ plt.figure(figsize=(10, 6))
 boxplot = df.boxplot(column=["EatBreakfast", "NoBreakfast"])
 plt.title("朝ごはんを食べたグループと食べなかったグループのテストの点数の分布")
 plt.ylabel("テストの点数")
-plt.show
+plt.show()

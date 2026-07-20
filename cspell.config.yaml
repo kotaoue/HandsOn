@@ -3,6 +3,7 @@ ignorePaths: []
 dictionaryDefinitions: []
 dictionaries: []
 words:
+  - annot
   - antipatterns
   - apache
   - autofmt
@@ -10,6 +11,8 @@ words:
   - bzcat
   - bzcmp
   - bzgrep
+  - cmap
+  - coolwarm
   - crun
   - dafujii
   - defn

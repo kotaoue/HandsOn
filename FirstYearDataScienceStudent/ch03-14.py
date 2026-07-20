@@ -24,6 +24,6 @@ data = {
 }
 df = pd.DataFrame(data)
 
-corr = df[["年齢", "身長", "体重", "血圧"]].corr()
-sns.heatmap(corr, annot=True, cmap="coolwarm")
+sns.regplot(x="身長", y="体重", data=df)
+plt.title("身長と体重の回帰直線")
 plt.show()

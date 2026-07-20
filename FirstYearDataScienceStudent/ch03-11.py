@@ -24,6 +24,4 @@ data = {
 }
 df = pd.DataFrame(data)
 
-corr = df[["年齢", "身長", "体重", "血圧"]].corr()
-sns.heatmap(corr, annot=True, cmap="coolwarm")
-plt.show()
+pretty_print(df[["年齢", "身長", "体重", "血圧"]].corr())

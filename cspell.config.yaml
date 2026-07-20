@@ -5,6 +5,7 @@ dictionaries: []
 words:
   - antipatterns
   - apache
+  - autofmt
   - bunzip
   - bzcat
   - bzcmp
@@ -25,6 +26,7 @@ words:
   - kota
   - kotaoue
   - libapache
+  - linestyle
   - Liskov
   - lrwxrwxrwx
   - mktemp
@@ -37,8 +39,11 @@ words:
   - rwxr
   - SIGWINCH
   - Stmts
+  - twinx
   - VARCHAR
   - webcontent
   - wordlist
+  - xdate
+  - ylabel
 ignoreWords: []
 import: []

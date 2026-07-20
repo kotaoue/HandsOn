@@ -23,7 +23,6 @@ data = {
     "運動頻度": ["高", "中", "低", "高", "中", "低", "高", "中", "低", "高"],
 }
 df = pd.DataFrame(data)
-numeric_df = df.select_dtypes(include="number")
 
 df["体重"].hist(bins=5)
 plt.title("体重のヒストグラム")

@@ -14,7 +14,16 @@ data = {
     "運動頻度": ["高", "中", "低", "高", "中", "低", "高", "中", "低", "高"],
 }
 df = pd.DataFrame(data)
+print("-" * 64)
 print(df.head())
+print("-" * 64)
+print("-" * 64)
+print(df.describe())
+print("-" * 64)
+print(df.min())
+print("-" * 64)
+print(df.max())
+print("-" * 64)
 
 fig, ax = plt.subplots(figsize=(10, 3))
 ax.axis("off")

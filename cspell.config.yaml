@@ -13,6 +13,7 @@ words:
   - bzgrep
   - cmap
   - coolwarm
+  - crosstab
   - crun
   - dafujii
   - defn
@@ -49,6 +50,7 @@ words:
   - wordlist
   - xdate
   - xlabel
+  - xticks
   - ylabel
 ignoreWords: []
 import: []

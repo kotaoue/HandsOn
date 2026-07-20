@@ -4,7 +4,10 @@ import seaborn as sns
 
 sns.set_theme()
 plt.rcParams["font.family"] = "Hiragino Sans"
+
 df = pd.DataFrame({"値段": [100, 120, 110, 130, 150]})
-df.plot()
-plt.title("値段の推移")
+
+ax = df.plot()
+ax.set_title("値段の推移")
+
 plt.show()

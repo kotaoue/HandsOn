@@ -17,6 +17,7 @@ words:
   - drwxr
   - ELIFECYCLE
   - errno
+  - figsize
   - Funcs
   - Globex
   - Hiragino
@@ -44,6 +45,7 @@ words:
   - webcontent
   - wordlist
   - xdate
+  - xlabel
   - ylabel
 ignoreWords: []
 import: []

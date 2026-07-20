@@ -6,8 +6,6 @@
 
 ```bash
 cd FirstYearDataScienceStudent
-python3 -m venv .venv
-./.venv/bin/python -m ensurepip --upgrade
-./.venv/bin/python -m pip install pandas matplotlib
-./.venv/bin/python ch01-1.py
+uv sync
+uv run python ch01-1.py
 ```

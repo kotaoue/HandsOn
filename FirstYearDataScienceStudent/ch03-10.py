@@ -24,4 +24,4 @@ data = {
 }
 df = pd.DataFrame(data)
 
-df[["年齢", "身長", "体重", "血圧"]].corr()
+pretty_print(df[["年齢", "身長", "体重", "血圧"]].corr())

@@ -5,7 +5,10 @@ import seaborn as sns
 
 def pretty_print(value):
     print("-" * 64)
-    print(value)
+    if isinstance(value, (pd.Series, pd.DataFrame)):
+        print(value.to_string())
+    else:
+        print(value)
 
 
 sns.set_theme()
@@ -20,12 +23,18 @@ data = {
     "運動頻度": ["高", "中", "低", "高", "中", "低", "高", "中", "低", "高"],
 }
 df = pd.DataFrame(data)
+numeric_df = df.select_dtypes(include="number")
+
 pretty_print(df.head())
 pretty_print(df.describe())
 pretty_print(df.min())
 pretty_print(df.max())
-pretty_print(df.median())
-pretty_print(df.std())
+pretty_print(numeric_df.median())
+pretty_print(numeric_df.std())
+
+df["体重"].hist(bins=5)
+plt.title("体重のヒストグラム")
+plt.show()
 
 """
 fig, ax = plt.subplots(figsize=(10, 3))

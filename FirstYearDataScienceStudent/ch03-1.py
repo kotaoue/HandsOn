@@ -3,9 +3,11 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 
-def pritter(s):
+def pretty_print(func, *args, **kwargs):
     print("-" * 64)
-    print(s)
+    result = func(*args, **kwargs)
+    print(result)
+    return result
 
 
 sns.set_theme()
@@ -20,10 +22,10 @@ data = {
     "運動頻度": ["高", "中", "低", "高", "中", "低", "高", "中", "低", "高"],
 }
 df = pd.DataFrame(data)
-pritter(df.head())
-pritter(df.describe())
-pritter(df.min())
-pritter(df.max())
+pretty_print(df.head)
+pretty_print(df.describe)
+pretty_print(df.min)
+pretty_print(df.max)
 
 fig, ax = plt.subplots(figsize=(10, 3))
 ax.axis("off")

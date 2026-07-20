@@ -3,11 +3,9 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 
-def pretty_print(func, *args, **kwargs):
+def pretty_print(value):
     print("-" * 64)
-    result = func(*args, **kwargs)
-    print(result)
-    return result
+    print(value)
 
 
 sns.set_theme()
@@ -26,6 +24,8 @@ pretty_print(df.head())
 pretty_print(df.describe())
 pretty_print(df.min())
 pretty_print(df.max())
+pretty_print(df.median())
+pretty_print(df.std())
 
 """
 fig, ax = plt.subplots(figsize=(10, 3))

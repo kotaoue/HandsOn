@@ -22,11 +22,12 @@ data = {
     "運動頻度": ["高", "中", "低", "高", "中", "低", "高", "中", "低", "高"],
 }
 df = pd.DataFrame(data)
-pretty_print(df.head)
-pretty_print(df.describe)
-pretty_print(df.min)
-pretty_print(df.max)
+pretty_print(df.head())
+pretty_print(df.describe())
+pretty_print(df.min())
+pretty_print(df.max())
 
+"""
 fig, ax = plt.subplots(figsize=(10, 3))
 ax.axis("off")
 ax.table(
@@ -35,3 +36,4 @@ ax.table(
     loc="center",
 )
 plt.show()
+"""

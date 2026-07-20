@@ -2,6 +2,12 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+
+def pritter(s):
+    print("-" * 64)
+    print(s)
+
+
 sns.set_theme()
 plt.rcParams["font.family"] = "Hiragino Sans"
 
@@ -14,16 +20,10 @@ data = {
     "運動頻度": ["高", "中", "低", "高", "中", "低", "高", "中", "低", "高"],
 }
 df = pd.DataFrame(data)
-print("-" * 64)
-print(df.head())
-print("-" * 64)
-print("-" * 64)
-print(df.describe())
-print("-" * 64)
-print(df.min())
-print("-" * 64)
-print(df.max())
-print("-" * 64)
+pritter(df.head())
+pritter(df.describe())
+pritter(df.min())
+pritter(df.max())
 
 fig, ax = plt.subplots(figsize=(10, 3))
 ax.axis("off")

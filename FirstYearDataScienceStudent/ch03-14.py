@@ -24,6 +24,6 @@ data = {
 }
 df = pd.DataFrame(data)
 
-sns.regplot(x="身長", y="体重", data=df)
-plt.title("身長と体重の回帰直線")
-plt.show()
+cross_tab = pd.crosstab(df["性別"], df["運動頻度"])
+cross_tab = cross_tab[["低", "中", "高"]]
+pretty_print(cross_tab)

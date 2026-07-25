@@ -3,12 +3,17 @@ ignorePaths: []
 dictionaryDefinitions: []
 dictionaries: []
 words:
+  - annot
   - antipatterns
   - apache
+  - autofmt
   - bunzip
   - bzcat
   - bzcmp
   - bzgrep
+  - cmap
+  - coolwarm
+  - crosstab
   - crun
   - dafujii
   - defn
@@ -16,14 +21,17 @@ words:
   - drwxr
   - ELIFECYCLE
   - errno
+  - figsize
   - Funcs
   - Globex
+  - Hiragino
   - htdocs
   - ifib
   - javac
   - kota
   - kotaoue
   - libapache
+  - linestyle
   - Liskov
   - lrwxrwxrwx
   - mktemp
@@ -36,8 +44,13 @@ words:
   - rwxr
   - SIGWINCH
   - Stmts
+  - twinx
   - VARCHAR
   - webcontent
   - wordlist
+  - xdate
+  - xlabel
+  - xticks
+  - ylabel
 ignoreWords: []
 import: []
